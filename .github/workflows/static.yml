@@ -1,5 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy `./index.html` static content to Github Pages
+name: Deploy `./` static content to Github Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -38,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './index.html'
+          path: './'
 
       - name: Deploy to GitHub Pages
         id: deployment
